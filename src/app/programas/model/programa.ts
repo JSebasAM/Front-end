@@ -1,13 +1,14 @@
 export class Programa {
-  id: number;  // Quitamos el ? para hacerlo obligatorio
-  nombre: string;  // Añadimos la propiedad faltante
-  activo?: boolean;
-  duracion?: number;
-  idCoordinador?: number;
-  idFacultad?: number;
+  id?:number;
+  activo?: boolean
+  duracion?:number;
+  idCoordinador?:number;
+  idFacultad?:number;
+  nombre?: string;
+  descripcion?: string;
+  perfilEgreso?: string;
+  nivelAcademico?: string;
+  numeroCreditos?: number;
 
-  constructor(id: number, nombre: string) {
-    this.id = id;
-    this.nombre = nombre;
-  }
+
 }
