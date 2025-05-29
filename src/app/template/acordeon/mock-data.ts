@@ -37,14 +37,14 @@ export const FACULTADES: Facultad[] = [
             ovas: [
               { id: 1, nombre: 'Interpolacion de lagrange', url:'/lib-lagrange' },
               { id: 2, nombre: 'Interpolacion de newton', url:'/lib-newton' },
-              { id: 3, nombre: 'OVA 3' }
+              { id: 3, nombre: 'Método de bisección', url:'/lib-biseccion' },
             ]
           },
           {
             id: 2,
-            nombre: 'Curso 2',
+            nombre: 'Matematicas Discretas',
             ovas: [
-              { id: 1, nombre: 'OVA 1' },
+              { id: 1, nombre: 'Operaciones entre conjuntos', url:'/lib-operaciones-conjuntos' },
               { id: 2, nombre: 'OVA 2' },
               { id: 3, nombre: 'OVA 3' }
             ]
