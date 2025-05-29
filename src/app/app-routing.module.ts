@@ -43,7 +43,9 @@ const routes: Routes = [
     children: [
       { path: 'home-ova', component: HomeOvaComponent },
       { path: 'lib-lagrange', component: LibLagrangeComponent },
-      { path: 'lib-newton', component: LibLagrangeComponent }
+      { path: 'lib-newton', component: LibLagrangeComponent },
+      { path: 'lib-biseccion', loadChildren: () => import('./librerias/analisis-numerico/lib-biseccion/lib-biseccion.module').then(m => m.LibBiseccionModule) },
+      { path: 'lib-operaciones-conjuntos', loadChildren: () => import('./librerias/matematicas-discretas/lib-operaciones-conjuntos/lib-operaciones-conjuntos.module').then(m => m.LibOperacionesConjuntosModule) }
     ]
   },
   { path: '', component: PageNoFoundComponent}
