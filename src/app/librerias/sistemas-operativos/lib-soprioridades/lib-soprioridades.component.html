@@ -1,0 +1,48 @@
+<div class="container">
+  <h1 class="title">Prioridades No Expulsivas</h1>
+
+  <div class="main-content">
+    <div class="form-section">
+      <div class="input-grid">
+        <!-- Encabezados -->
+        <ng-container *ngFor="let index of [0,1,2,3,4]">
+          <div class="grid-header">ID {{ index + 1 }}</div>
+        </ng-container>
+        <ng-container *ngFor="let index of [0,1,2,3,4]">
+          <input type="number" class="input-field" [(ngModel)]="procesos[index].id" min="0">
+        </ng-container>
+
+        <ng-container *ngFor="let index of [0,1,2,3,4]">
+          <div class="grid-header">Llegada {{ index + 1 }}</div>
+        </ng-container>
+        <ng-container *ngFor="let index of [0,1,2,3,4]">
+          <input type="number" class="input-field" [(ngModel)]="procesos[index].llegada" min="0">
+        </ng-container>
+
+        <ng-container *ngFor="let index of [0,1,2,3,4]">
+          <div class="grid-header">Ráfaga {{ index + 1 }}</div>
+        </ng-container>
+        <ng-container *ngFor="let index of [0,1,2,3,4]">
+          <input type="number" class="input-field" [(ngModel)]="procesos[index].rafaga" min="1">
+        </ng-container>
+
+        <ng-container *ngFor="let index of [0,1,2,3,4]">
+          <div class="grid-header">Prioridad {{ index + 1 }}</div>
+        </ng-container>
+        <ng-container *ngFor="let index of [0,1,2,3,4]">
+          <input type="number" class="input-field" [(ngModel)]="procesos[index].prioridad" min="0">
+        </ng-container>
+      </div>
+
+      <button class="operate-button" (click)="calcularPrioridades()">Operar</button>
+    </div>
+
+    <div class="result-section">
+      <h2 class="result-title">Resultado</h2>
+      <div class="result-output">
+        <pre *ngIf="resultado">{{resultado}}</pre>
+        <div *ngIf="error" class="error-message">{{error}}</div>
+      </div>
+    </div>
+  </div>
+</div>

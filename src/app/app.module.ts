@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import {Router, RouterModule} from '@angular/router';
+import { RouterModule } from '@angular/router';
 import {HttpClientModule, provideHttpClient} from '@angular/common/http';
 import { PageNoFoundComponent } from './page-no-found/page-no-found.component';
 import { HeaderComponent } from './template/header/header.component';
@@ -64,7 +63,7 @@ import { LibCostos5Component } from './librerias/costos-presupuestos/lib-costos5
     ReactiveFormsModule,
     FormsModule,
     AppRoutingModule,
-    FormsModule,
+    FormsModule
   ],
   exports: [RouterModule],
   providers: [
