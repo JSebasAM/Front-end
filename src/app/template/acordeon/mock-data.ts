@@ -63,7 +63,7 @@ export const FACULTADES: Facultad[] = [
             id: 4,
             nombre: 'Costos y presupuestos',
             ovas: [
-              { id: 1, nombre: 'Costos por Proceso', url: '/lib-costosxp' }
+              { id: 1, nombre: 'Costos por Proceso', url: '/lib-costos-xp' }
             ]
           },
           {

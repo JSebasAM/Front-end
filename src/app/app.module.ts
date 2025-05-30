@@ -26,7 +26,6 @@ import { LibCostosXpComponent } from './librerias/costos-presupuestos/lib-costos
 import {LibLagrangeComponent} from './librerias/analisis-numerico/lib-lagrange/lib-lagrange.component';
 import {OvaTemplateComponent} from './template/ova-template/ova-template.component';
 import {AcordeonComponent} from './template/acordeon/acordeon.component';
-import { LibCostos5Component } from './librerias/costos-presupuestos/lib-costos5/lib-costos5.component';
 
 @NgModule({
   declarations: [
@@ -49,8 +48,7 @@ import { LibCostos5Component } from './librerias/costos-presupuestos/lib-costos5
     LibGitcmdComponent,
     LoginComponent,
     InformacionComponent,
-    LibCostosXpComponent,
-    LibCostos5Component
+    LibCostosXpComponent
   ],
   imports: [
     BrowserModule,

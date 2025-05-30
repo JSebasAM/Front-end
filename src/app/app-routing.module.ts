@@ -11,10 +11,10 @@ import {InformacionComponent} from './informacion/informacion.component';
 import {OvaTemplateComponent} from './template/ova-template/ova-template.component';
 import {LibLagrangeComponent} from './librerias/analisis-numerico/lib-lagrange/lib-lagrange.component';
 import {OvasComponent} from './ova/ovas/ovas.component';
-import {LibCostos5Component} from './librerias/costos-presupuestos/lib-costos5/lib-costos5.component';
 import {EmptyLayoutComponent} from './template/empty-layout/empty-layout.component';
 import {LoginComponent} from './login/login.component';
 import {PageNoFoundComponent} from './page-no-found/page-no-found.component';
+import {LibCostosXpComponent} from './librerias/costos-presupuestos/lib-costos-xp/lib-costos-xp.component';
 
 const routes: Routes = [
 
@@ -31,7 +31,7 @@ const routes: Routes = [
     component: OvaTemplateComponent,  // MOVER ESTE BLOQUE ARRIBA DE FullLayoutComponent
     children: [
       { path: 'home-ova', component: HomeOvaComponent },
-      { path: 'lib-costos5', component: LibCostos5Component },
+      { path: 'lib-costos-xp', component: LibCostosXpComponent},
       { path: 'lib-newton', component: LibLagrangeComponent },
       { path: 'lib-escitala', component: LibEscitalaComponent },
       { path: 'lib-gitcmd', component: LibGitcmdComponent },
@@ -51,7 +51,7 @@ const routes: Routes = [
       { path: 'facultad', loadChildren: () => import('./facultad/facultad.module').then(m => m.FacultadModule) },
       { path: 'home-ova', component: HomeOvaComponent },
       { path: 'lib-escitala', component:LibEscitalaComponent},
-      { path:  'lib-costos5',  component:LibCostos5Component},
+      { path:  'lib-costos-xp',  component:LibCostosXpComponent},
       //{ path: '', redirectTo: '/home', pathMatch: 'full' }
       { path: '', redirectTo: '/programas', pathMatch: 'full' },
       { path: 'programas', loadChildren: () => import('./programas/programas.module').then(m => m.ProgramasModule) },

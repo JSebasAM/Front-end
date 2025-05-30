@@ -2,15 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { LibCostosXpComponent } from './lib-costos-xp.component';
+import {LibCostosXpRoutingModule} from './lib-costos-xp-routing.module';
 
 @NgModule({
-  declarations: [LibCostosXpComponent],
+  declarations: [],
   imports: [
     CommonModule,
     FormsModule,
     HttpClientModule,
-
+    LibCostosXpRoutingModule
   ]
 })
 export class LibCostosXpModule {}
