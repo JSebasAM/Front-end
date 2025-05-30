@@ -16,9 +16,6 @@ import {EmptyLayoutComponent} from './template/empty-layout/empty-layout.compone
 import {LoginComponent} from './login/login.component';
 import {PageNoFoundComponent} from './page-no-found/page-no-found.component';
 
-import {LibInversaComponent} from './librerias/matematicas-discretas/lib-inversa/lib-inversa.component';
-import {LibSoprioridadesComponent} from './librerias/sistemas-operativos/lib-soprioridades/lib-soprioridades.component';
-
 const routes: Routes = [
 
   { path: '',
@@ -55,8 +52,6 @@ const routes: Routes = [
       { path: 'home-ova', component: HomeOvaComponent },
       { path: 'lib-escitala', component:LibEscitalaComponent},
       { path:  'lib-costos5',  component:LibCostos5Component},
-      { path: 'lib-inversa', component: LibInversaComponent},
-      { path: 'lib-soprioridades', component: LibSoprioridadesComponent},
       //{ path: '', redirectTo: '/home', pathMatch: 'full' }
       { path: '', redirectTo: '/programas', pathMatch: 'full' },
       { path: 'programas', loadChildren: () => import('./programas/programas.module').then(m => m.ProgramasModule) },
