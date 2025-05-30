@@ -16,7 +16,6 @@ import { LibBiseccionComponent } from './librerias/analisis-numerico/lib-bisecci
 import {LibCostos5Component} from './librerias/costos-presupuestos/lib-costos5/lib-costos5.component';
 import {EmptyLayoutComponent} from './template/empty-layout/empty-layout.component';
 import {LoginComponent} from './login/login.component';
-import {LibCostosXpComponent} from './librerias/costos-presupuestos/lib-costos-xp/lib-costos-xp.component';
 import {LibOperacionesConjuntosComponent} from './librerias/matematicas-discretas/lib-operaciones-conjuntos/lib-operaciones-conjuntos.component';
 import {PageNoFoundComponent} from './page-no-found/page-no-found.component';
 
