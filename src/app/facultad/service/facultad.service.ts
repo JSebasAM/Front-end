@@ -8,7 +8,7 @@ import { Usuario } from '../model/usuario';
   providedIn: 'root'
 })
 export class FacultadService {
-  private apiUrl = 'http://api.mewings.joptionpane.software/api/v1/facultad-service';
+  private apiUrl = 'http://api.chacaleo.joptionpane.software/api/v1/facultad-service';
 
   constructor(private http: HttpClient) {}
 
